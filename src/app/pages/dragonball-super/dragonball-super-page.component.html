@@ -1,0 +1,15 @@
+<!doctype html>
+<h1>Dragon Ball Super Page</h1>
+<hr>
+
+<section class="row">
+  <div class="col-12 col-sm-6">
+    <drangonball-character-add (newCharacter)="dragonballService.addCharacter($event)"/>
+  </div>
+
+  <div class="col-12 col-sm-6">
+
+    <dragonball-character-list title="Listado" [characters]="dragonballService.characters()" />
+
+  </div>
+</section>
